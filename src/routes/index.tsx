@@ -9,9 +9,8 @@ import Sheet from '../components/Sheet'
 import { useDispatch, useAppState } from '../contexts/providers'
 import { ComponentActions } from '../contexts/actions'
 import { isMobile } from '../utils/screen'
-import { isChainTypeError, isMainnet } from '../utils/chain'
+import { isChainTypeError } from '../utils/chain'
 import Alert from '../components/Alert'
-import CONFIG from '../config'
 
 const Home = lazy(() => import('../pages/Home'))
 const Block = lazy(() => import('../pages/BlockDetail'))
@@ -328,7 +327,7 @@ export default () => {
   })
 
   return (
-    <Router basename={isMainnet() ? '/' : `/${CONFIG.TESTNET_NAME}`}>
+    <Router basename='/'>
       <Route
         render={(props: any) => (
           <Page>

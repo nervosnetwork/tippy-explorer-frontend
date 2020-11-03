@@ -2,6 +2,7 @@
   "name": "ckb-explorer-fronted",
   "version": "1.0.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "antd": "4.4.2",
     "axios": "0.18.1",
