@@ -7,7 +7,6 @@ import { ComponentActions } from '../../contexts/actions'
 import MenusComp from './MenusComp'
 import { SearchComp } from './SearchComp'
 import LanguageComp from './LanguageComp'
-import BlockchainComp from './BlockchainComp'
 import { useLocation } from 'react-router'
 import { currentLanguage } from '../../utils/i18n'
 
@@ -68,7 +67,6 @@ export default () => {
           {!(isScreen750to1440() && searchBarEditable && headerSearchBarVisible) && <MenusComp />}
           <HeaderEmptyPanel />
           {headerSearchBarVisible && <SearchComp />}
-          <BlockchainComp />
           <LanguageComp />
         </>
       )}

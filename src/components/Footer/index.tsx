@@ -21,7 +21,6 @@ import { getCurrentYear } from '../../utils/date'
 import { FooterMenuPanel, FooterItemPanel, FooterImageItemPanel, FooterPanel } from './styled'
 import { useTranslation } from 'react-i18next'
 import { isMobile } from '../../utils/screen'
-import { TOKEN_EMAIL_SUBJECT, TOKEN_EMAIL_BODY } from '../../utils/const'
 import { isMainnet } from '../../utils/chain'
 
 interface FooterLinkItem {
@@ -94,14 +93,6 @@ export default () => {
           {
             label: t('footer.whitepaper'),
             url: 'https://github.com/nervosnetwork/rfcs/blob/master/rfcs/0002-ckb/0002-ckb.md',
-          },
-          {
-            label: t('footer.faucet'),
-            url: 'https://faucet.nervos.org/',
-          },
-          {
-            label: t('udt.submit_token_info'),
-            url: `mailto:asset-info-submit@nervos.org?subject=${TOKEN_EMAIL_SUBJECT}&body=${TOKEN_EMAIL_BODY}`,
           },
         ],
       },

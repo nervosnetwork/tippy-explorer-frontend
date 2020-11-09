@@ -36,13 +36,6 @@ const menuDataList = () => {
       name: i18n.t('navbar.charts'),
       url: '/charts',
     },
-    !isMainnet()
-      ? {
-          type: LinkType.Outer,
-          name: i18n.t('navbar.faucet'),
-          url: 'https://faucet.nervos.org/',
-        }
-      : {},
   ]
 }
 
